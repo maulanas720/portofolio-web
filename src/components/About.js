@@ -1,13 +1,20 @@
 import React from 'react';
+import { TypeAnimation } from 'react-type-animation';
 
 function About() {
   return (
     <section id="about">
       <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
         <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Hi, I'm Reed.
-            <br className="hidden lg:inline-block" />I love to build amazing
-            apps.
+          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Hi, I'm Maulana Sidiq.
+            <br className="hidden lg:inline-block" />
+            <TypeAnimation
+              sequence={["I'm Web Developer", 1000, "I'm Tech enthusiast", 1000, 'I love to build amazing apps', 1000]}
+                            //  Replacing previous Text
+
+              wrapper="div"
+              repeat={Infinity}
+            />
           </h1>
           <p className="mb-8 leading-relaxed">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
